@@ -1,3 +1,5 @@
-import './style.css'
+import { LoadingPage } from "./src/pages/loading-page";
+import "./style.css";
 
-document.querySelector('#app').innerHTML = "";
+const app = document.querySelector("#app");
+app?.append(LoadingPage());
