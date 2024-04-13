@@ -1,9 +1,11 @@
-import { Loading } from "../templates/loading";
+import { Loading } from "../templates/start/loading";
 import { El } from "../utils/createElement";
 
 export function LoadingPage() {
-    return El({
-        element: "div",
-        children:[Loading()]
-    })
+  const element = El({
+    element: "div",
+  });
+  const child = Loading();
+  element.append(child);
+  return element;
 }

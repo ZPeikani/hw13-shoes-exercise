@@ -1,4 +1,4 @@
-import { El } from "../utils/createElement";
+import { El } from "../../utils/createElement";
 export function Loading() {
   return El({
     element: "div",
@@ -22,7 +22,7 @@ export function Loading() {
       El({
         element: "img",
         src: "./src/assets/imgs/spinner-atom.svg",
-        className:"mb-28"
+        className: "animate-spin mb-48",
       }),
     ],
   });

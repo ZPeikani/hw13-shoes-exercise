@@ -1,5 +1,3 @@
-import { LoadingPage } from "./src/pages/loading-page";
+import { Router } from "./src/routes/router";
 import "./style.css";
-
-const app = document.querySelector("#app");
-app?.append(LoadingPage());
+Router().resolve();
